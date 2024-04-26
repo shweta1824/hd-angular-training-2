@@ -1,0 +1,42 @@
+<div class="app-container">
+    <!--  -->
+    <mat-toolbar class="app-toolbar">
+        <button mat-icon-button aria-label="Toggle navigation menu" (click)="drawer.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span>Hudsondata</span>
+        <span class="app-toolbar-spacer"></span>
+        <button mat-icon-button aria-label="Logout" *ngIf="isLoggedIn$ | async" (click)="logout()">
+            <mat-icon>logout</mat-icon>
+        </button>
+    </mat-toolbar>
+    <mat-drawer-container class="container" autosize>
+        <mat-drawer #drawer class="sidenav" mode="side">
+            <ul>
+                <a routerLink="/home" routerLinkActive="active">
+                    <mat-icon>home</mat-icon>&nbsp;
+                    Home
+                </a>
+                <a routerLink="/profile" routerLinkActive="active" *ngIf="isLoggedIn$ | async">
+                    <mat-icon>person</mat-icon>&nbsp;
+                    Profile
+                </a>
+                <a routerLink="/blog" routerLinkActive="active" *ngIf="isLoggedIn$ | async">
+                    <mat-icon>add</mat-icon>&nbsp;
+                    Create Blogs
+                </a>
+                <a routerLink="/my-blogs" routerLinkActive="active" *ngIf="isLoggedIn$ | async">
+                    <mat-icon>create</mat-icon>&nbsp;
+                    My Blogs
+                </a>
+                <a routerLink="/login" routerLinkActive="active" *ngIf="!(isLoggedIn$ | async)">
+                    <mat-icon>login</mat-icon>&nbsp;
+                    Login
+                </a>
+            </ul>
+        </mat-drawer>
+        <div class="sidenav-content">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-drawer-container>
+</div>

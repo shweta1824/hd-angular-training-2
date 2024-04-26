@@ -1,0 +1,27 @@
+<div fxFlexFill>
+    <div fxLayoutAlign="center center" class="main" fxFlexFill>
+        <mat-card class="card">
+            <mat-card-title class="title">Sign Up</mat-card-title>
+            <mat-card-content>
+                <form class="form">
+                    <mat-form-field class="field">
+                        <input matInput placeholder="Shweta Shirsath" name="username" [(ngModel)]="username">
+                    </mat-form-field><br />
+                    <mat-form-field class="field">
+                        <input matInput placeholder="xyz@gmail.com" name="email" [(ngModel)]="email">
+                    </mat-form-field><br />
+                    <mat-form-field class="field">
+                        <input matInput type="password" placeholder="*******" name="password" [(ngModel)]="password">
+                    </mat-form-field>
+                    <button class="button" (click)="register()">Sign Up</button>
+                    <div class="row">
+                        <div class="link">
+                            <span>Already have an account? </span>
+                            <a href="/login"><span>Sign In</span></a>
+                        </div>
+                    </div>
+                </form>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

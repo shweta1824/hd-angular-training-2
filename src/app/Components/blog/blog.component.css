@@ -1,0 +1,45 @@
+.main{
+    margin: 5vw 5vh;
+}
+
+.form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100vh;
+}
+
+.field {
+    width: 67vh;
+    margin-bottom: 2vh;
+}
+
+.card {
+    padding: 3vh 0vh;
+    width: 34vw;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 5vh;
+    margin-bottom: 5vh;
+    padding-left: 11vw;
+}
+
+.button {
+    justify-items: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: black;
+    height: 7vh;
+    color: white;
+    font-size: larger;
+    width: 30vw;
+    cursor: pointer;
+}
+
+.status{
+    width: 15vw;
+}
+
+
+
