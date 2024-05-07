@@ -72,9 +72,15 @@ export class AuthService {
     })
   }
 
-  async getUserEmail(): Promise<string> {
+  async getUserEmail(): Promise<any> {
     const user = await this.afAuth.currentUser;
-    return user?.email || '';
+    console.log(user)
+    return {
+        email:user?.email,
+        name:user?.displayName,
+
+    };
+
   }
 
   async getUserById(id: string): Promise<AngularFirestoreCollection<User>> {
