@@ -73,14 +73,12 @@ export class AuthService {
   }
 
   async getUserEmail(): Promise<any> {
-    const user = await this.afAuth.currentUser;
+    const user = JSON.parse(localStorage.getItem("user") || "");
     console.log(user)
     return {
-        email:user?.email,
-        name:user?.displayName,
-
+        email: user?.email || " ",
+        name: user?.displayName,
     };
-
   }
 
   async getUserById(id: string): Promise<AngularFirestoreCollection<User>> {
