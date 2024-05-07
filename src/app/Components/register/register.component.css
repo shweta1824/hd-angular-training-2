@@ -1,68 +1,61 @@
+/* Global Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container Styles */
 .main {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.form {
-    min-width: 150px;
-    max-width: 500px;
-    width: 100vh;
-}
-
-.field {
-    width: 67vh;
-    margin-bottom: 2vh;
-}
-
+/* Card Styles */
 .card {
-    padding: 5vh 0vh;
-    width: 34vw;
-}
-
-.sec1 {
-    background: black;
-    color: white;
-    text-transform: uppercase
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .title {
     font-weight: bold;
-    font-size: 5vh;
-    margin-bottom: 5vh;
-    padding-left: 13vw;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+.form {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto; /* Center the form within the card */
+}
+
+.field {
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .button {
-    justify-items: center;
-    align-items: center;
-    border-radius: 5px;
-    background-color: black;
-    width: 31vw;
-    height: 7vh;
-    color: white;
-    font-size: larger;
-}
-
-.sign-button {
-    border-radius: 5px;
-    margin-top: 3vh;
-    border: none;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    background-color: gray;
-    width: 31vw;
-    height: 7vh;
-    color: rgb(126, 123, 123);
-    font-size: large;
-    border: 1px solid black;
+    width: 100%;
+    height: 50px;
 }
 
 .link {
-    text-decoration: none;
-    margin-top: 1vh;
+    margin-top: 20px;
 }
 
-a {
-    text-decoration: none;
+.link span {
+    color: #3f51b5;
+    cursor: pointer;
+}
+
+.link span:hover {
+    text-decoration: underline;
 }

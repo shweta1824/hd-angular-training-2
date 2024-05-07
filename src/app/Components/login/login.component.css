@@ -1,69 +1,55 @@
-.main{
-    height: 100vh;
-    width: 100vw;
-   
+/* Adjust global styles as needed */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-.form {
-    min-width: 150px;
-    max-width: 500px;
-    width: 100vh;
-}
-
-.field {
-    width: 67vh;
-    margin-bottom: 2vh;
+.main {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .card {
-    padding: 3vh 0vh;
-    width: 34vw;
-}
-
-.sec1 {
-    background: black;
-    color: white;
-    text-transform: uppercase
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
 }
 
 .title {
     font-weight: bold;
-    font-size: 5vh;
-    margin-bottom: 5vh;
-    padding-left: 13vw;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.form {
+    width: 100%;
+    max-width: 300px;
+}
+
+.field {
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .button {
-    justify-items: center;
-    align-items: center;
-    border-radius: 5px;
-    background-color: black;
-    width: 31vw;
-    height: 7vh;
-    color: white;
-    font-size: larger;
-}
-
-.sign-button {
-    border-radius: 5px;
-    margin-top: 3vh;
-    border: none;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    background-color: gray;
-    width: 31vw;
-    height: 7vh;
-    color: rgb(126, 123, 123);
-    font-size: large;
-    border: 1px solid black;
+    width: 100%;
+    height: 50px;
 }
 
 .link {
-    text-decoration: none;
-    margin-top: 1vh;
+    margin-top: 20px;
+    text-align: center;
 }
 
-a {
-    text-decoration: none;
+.link span {
+    color: #3f51b5;
+    cursor: pointer;
+}
+
+.link span:hover {
+    text-decoration: underline;
 }

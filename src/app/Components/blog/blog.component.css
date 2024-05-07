@@ -1,45 +1,59 @@
-.main{
-    margin: 5vw 5vh;
-}
-
-.form {
-    min-width: 150px;
-    max-width: 500px;
-    width: 100vh;
-}
-
-.field {
-    width: 67vh;
-    margin-bottom: 2vh;
+.main {
+    margin: 5vh auto;
+    width: 80%; /* Adjust the width of the form container */
 }
 
 .card {
-    padding: 3vh 0vh;
-    width: 34vw;
+    padding: 3vh;
+    width: 100%;
+    max-width: 600px; /* Adjust the maximum width of the card */
+    box-sizing: border-box;
 }
 
 .title {
     font-weight: bold;
-    font-size: 5vh;
-    margin-bottom: 5vh;
-    padding-left: 11vw;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
 
-.button {
-    justify-items: center;
-    align-items: center;
-    border-radius: 5px;
-    background-color: black;
-    height: 7vh;
-    color: white;
-    font-size: larger;
-    width: 30vw;
-    cursor: pointer;
+.form {
+    width: 100%;
 }
 
-.status{
-    width: 15vw;
+.field {
+    width: 100%;
+    margin-bottom: 2rem;
 }
 
+textarea.mat-input-element {
+    /* Style textarea input if needed */
+    min-height: 150px; /* Set minimum height for textarea */
+}
 
+.mat-button-toggle-group {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
 
+button[type="submit"] {
+    width: 100%;
+    max-width: 300px; /* Adjust the maximum width of the submit button */
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        padding: 2vh;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    button[type="submit"] {
+        max-width: 100%;
+    }
+}

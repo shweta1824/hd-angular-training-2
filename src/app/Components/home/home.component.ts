@@ -22,6 +22,7 @@ export class HomeComponent {
     this.blogService.getAll().snapshotChanges().pipe(
       map((blogs: any) => {
         return blogs.map((blog: any) => {
+          
           return {
             id: blog.payload.doc.id,
             ...blog.payload.doc.data()
